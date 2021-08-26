@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-NasaExample/Pods-NasaExample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework
+${BUILT_PRODUCTS_DIR}/CollectionViewWaterfallLayout/CollectionViewWaterfallLayout.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
