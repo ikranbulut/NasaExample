@@ -3,27 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		042213B526CF9A1A000488D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213B426CF9A1A000488D9 /* AppDelegate.swift */; };
 		042213B726CF9A1A000488D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213B626CF9A1A000488D9 /* SceneDelegate.swift */; };
-		042213B926CF9A1A000488D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213B826CF9A1A000488D9 /* ViewController.swift */; };
+		042213B926CF9A1A000488D9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213B826CF9A1A000488D9 /* MainViewController.swift */; };
 		042213BC26CF9A1A000488D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042213BA26CF9A1A000488D9 /* Main.storyboard */; };
 		042213BE26CF9A1B000488D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042213BD26CF9A1B000488D9 /* Assets.xcassets */; };
 		042213C126CF9A1B000488D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042213BF26CF9A1B000488D9 /* LaunchScreen.storyboard */; };
+		042213E226CFA3E4000488D9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213E126CFA3E4000488D9 /* Enums.swift */; };
+		042213E826CFBB97000488D9 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213E726CFBB97000488D9 /* NetworkingManager.swift */; };
+		042213EC26CFBC56000488D9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213EB26CFBC56000488D9 /* Category.swift */; };
+		042213EF26CFCBB2000488D9 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213EE26CFCBB2000488D9 /* CustomCollectionViewCell.swift */; };
+		042213F126CFCBE3000488D9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213F026CFCBE3000488D9 /* UIViewExtension.swift */; };
+		042213F626D1165B000488D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042213F526D1165B000488D9 /* Constants.swift */; };
+		042F445526D3ACAF00CB56FE /* PopOverMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F445426D3ACAF00CB56FE /* PopOverMenuTableViewCell.swift */; };
+		0430BA6A26D24AAA0057B8A2 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430BA6926D24AAA0057B8A2 /* PhotoCollectionViewController.swift */; };
+		0430BA6C26D24AD40057B8A2 /* PhotoCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430BA6B26D24AD40057B8A2 /* PhotoCollectionViewModel.swift */; };
+		0430BA6E26D2E6660057B8A2 /* PopOverMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0430BA6D26D2E6660057B8A2 /* PopOverMenu.storyboard */; };
+		0430BA7126D2E6CE0057B8A2 /* PopOverMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430BA7026D2E6CE0057B8A2 /* PopOverMenuViewController.swift */; };
+		0430BA7326D2E6D90057B8A2 /* PopOverMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430BA7226D2E6D90057B8A2 /* PopOverMenuViewModel.swift */; };
+		0449336B26D6DC7600EDFA4B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0449336A26D6DC7600EDFA4B /* Localizable.strings */; };
+		04B3960D26D41A4200C215D4 /* PhotoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B3960B26D41A4200C215D4 /* PhotoDetailView.xib */; };
+		04B3960E26D41A4200C215D4 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3960C26D41A4200C215D4 /* PhotoDetailView.swift */; };
+		04B3B19626D4E575006E53E7 /* PhotoDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3B19426D4E575006E53E7 /* PhotoDetailCellView.swift */; };
+		04B3B19A26D5AB6E006E53E7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3B19926D5AB6E006E53E7 /* StringExtensions.swift */; };
+		04B3B19C26D5AB97006E53E7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3B19B26D5AB97006E53E7 /* Localization.swift */; };
+		04D3E73B26D7858F000033DD /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3E73A26D7858F000033DD /* Styles.swift */; };
+		04D3E73E26D7930A000033DD /* NasaAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D3E73D26D7930A000033DD /* NasaAPI.plist */; };
+		90581D3BCD736D78B64E2CD4 /* Pods_NasaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB039A9A3931105AC08333F /* Pods_NasaExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		042213B126CF9A1A000488D9 /* NasaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042213B426CF9A1A000488D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042213B626CF9A1A000488D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		042213B826CF9A1A000488D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		042213B826CF9A1A000488D9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		042213BB26CF9A1A000488D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		042213BD26CF9A1B000488D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042213C026CF9A1B000488D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		042213C226CF9A1B000488D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042213C226CF9A1B000488D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		042213E126CFA3E4000488D9 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		042213E726CFBB97000488D9 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		042213EB26CFBC56000488D9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		042213EE26CFCBB2000488D9 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		042213F026CFCBE3000488D9 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		042213F526D1165B000488D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		042F445426D3ACAF00CB56FE /* PopOverMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverMenuTableViewCell.swift; sourceTree = "<group>"; };
+		0430BA6926D24AAA0057B8A2 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		0430BA6B26D24AD40057B8A2 /* PhotoCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewModel.swift; sourceTree = "<group>"; };
+		0430BA6D26D2E6660057B8A2 /* PopOverMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopOverMenu.storyboard; sourceTree = "<group>"; };
+		0430BA7026D2E6CE0057B8A2 /* PopOverMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverMenuViewController.swift; sourceTree = "<group>"; };
+		0430BA7226D2E6D90057B8A2 /* PopOverMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverMenuViewModel.swift; sourceTree = "<group>"; };
+		0449336A26D6DC7600EDFA4B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		04B3960B26D41A4200C215D4 /* PhotoDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailView.xib; sourceTree = "<group>"; };
+		04B3960C26D41A4200C215D4 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		04B3B19426D4E575006E53E7 /* PhotoDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailCellView.swift; sourceTree = "<group>"; };
+		04B3B19926D5AB6E006E53E7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		04B3B19B26D5AB97006E53E7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		04D3E73A26D7858F000033DD /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		04D3E73D26D7930A000033DD /* NasaAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NasaAPI.plist; sourceTree = "<group>"; };
+		13BD76C73AE120A5468D84C0 /* Pods-NasaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaExample.debug.xcconfig"; path = "Target Support Files/Pods-NasaExample/Pods-NasaExample.debug.xcconfig"; sourceTree = "<group>"; };
+		9EB039A9A3931105AC08333F /* Pods_NasaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5901915AA080D7F99658A1B /* Pods-NasaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaExample.release.xcconfig"; path = "Target Support Files/Pods-NasaExample/Pods-NasaExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90581D3BCD736D78B64E2CD4 /* Pods_NasaExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +87,8 @@
 			children = (
 				042213B326CF9A1A000488D9 /* NasaExample */,
 				042213B226CF9A1A000488D9 /* Products */,
+				8A2C380044C2E2392C938F6C /* Pods */,
+				9FFC3226EAF3580B4ED00B29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +103,140 @@
 		042213B326CF9A1A000488D9 /* NasaExample */ = {
 			isa = PBXGroup;
 			children = (
-				042213B426CF9A1A000488D9 /* AppDelegate.swift */,
-				042213B626CF9A1A000488D9 /* SceneDelegate.swift */,
-				042213B826CF9A1A000488D9 /* ViewController.swift */,
-				042213BA26CF9A1A000488D9 /* Main.storyboard */,
-				042213BD26CF9A1B000488D9 /* Assets.xcassets */,
-				042213BF26CF9A1B000488D9 /* LaunchScreen.storyboard */,
 				042213C226CF9A1B000488D9 /* Info.plist */,
+				042213E526CFA7B7000488D9 /* Config */,
+				042213ED26CFBFE3000488D9 /* Entities */,
+				042213F226CFCC5B000488D9 /* Extensions */,
+				04EFDD9726D1A22800186EA5 /* Classes */,
+				042213E926CFBBF6000488D9 /* Managers */,
+				042213D826CF9DD3000488D9 /* Modules */,
+				042213E626CFA7E2000488D9 /* Resources */,
 			);
 			path = NasaExample;
+			sourceTree = "<group>";
+		};
+		042213D726CF9DC5000488D9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				042213B826CF9A1A000488D9 /* MainViewController.swift */,
+				042213BA26CF9A1A000488D9 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		042213D826CF9DD3000488D9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				042213D726CF9DC5000488D9 /* Main */,
+				0430BA6826D24A2B0057B8A2 /* Photo Collection */,
+				0430BA6F26D2E6BB0057B8A2 /* Pop Over Menu */,
+				04B3960F26D41A4E00C215D4 /* Photo Detail Xib */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		042213E526CFA7B7000488D9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				042213E126CFA3E4000488D9 /* Enums.swift */,
+				042213B426CF9A1A000488D9 /* AppDelegate.swift */,
+				042213B626CF9A1A000488D9 /* SceneDelegate.swift */,
+				042213F526D1165B000488D9 /* Constants.swift */,
+				04B3B19B26D5AB97006E53E7 /* Localization.swift */,
+				04D3E73A26D7858F000033DD /* Styles.swift */,
+				04D3E73D26D7930A000033DD /* NasaAPI.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		042213E626CFA7E2000488D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				042213BD26CF9A1B000488D9 /* Assets.xcassets */,
+				042213BF26CF9A1B000488D9 /* LaunchScreen.storyboard */,
+				0449336A26D6DC7600EDFA4B /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		042213E926CFBBF6000488D9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				042213E726CFBB97000488D9 /* NetworkingManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		042213ED26CFBFE3000488D9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				042213EB26CFBC56000488D9 /* Category.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		042213F226CFCC5B000488D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				042213F026CFCBE3000488D9 /* UIViewExtension.swift */,
+				04B3B19926D5AB6E006E53E7 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0430BA6826D24A2B0057B8A2 /* Photo Collection */ = {
+			isa = PBXGroup;
+			children = (
+				0430BA6926D24AAA0057B8A2 /* PhotoCollectionViewController.swift */,
+				0430BA6B26D24AD40057B8A2 /* PhotoCollectionViewModel.swift */,
+				042213EE26CFCBB2000488D9 /* CustomCollectionViewCell.swift */,
+			);
+			path = "Photo Collection";
+			sourceTree = "<group>";
+		};
+		0430BA6F26D2E6BB0057B8A2 /* Pop Over Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0430BA7026D2E6CE0057B8A2 /* PopOverMenuViewController.swift */,
+				0430BA7226D2E6D90057B8A2 /* PopOverMenuViewModel.swift */,
+				042F445426D3ACAF00CB56FE /* PopOverMenuTableViewCell.swift */,
+				0430BA6D26D2E6660057B8A2 /* PopOverMenu.storyboard */,
+			);
+			path = "Pop Over Menu";
+			sourceTree = "<group>";
+		};
+		04B3960F26D41A4E00C215D4 /* Photo Detail Xib */ = {
+			isa = PBXGroup;
+			children = (
+				04B3960C26D41A4200C215D4 /* PhotoDetailView.swift */,
+				04B3B19426D4E575006E53E7 /* PhotoDetailCellView.swift */,
+				04B3960B26D41A4200C215D4 /* PhotoDetailView.xib */,
+			);
+			path = "Photo Detail Xib";
+			sourceTree = "<group>";
+		};
+		04EFDD9726D1A22800186EA5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A2C380044C2E2392C938F6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13BD76C73AE120A5468D84C0 /* Pods-NasaExample.debug.xcconfig */,
+				E5901915AA080D7F99658A1B /* Pods-NasaExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9FFC3226EAF3580B4ED00B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB039A9A3931105AC08333F /* Pods_NasaExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042213C526CF9A1B000488D9 /* Build configuration list for PBXNativeTarget "NasaExample" */;
 			buildPhases = (
+				85B7CF0D9FC3D30AD9E16A7E /* [CP] Check Pods Manifest.lock */,
 				042213AD26CF9A1A000488D9 /* Sources */,
 				042213AE26CF9A1A000488D9 /* Frameworks */,
 				042213AF26CF9A1A000488D9 /* Resources */,
+				EA5E1DAF60A92CBF019F33B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,7 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B3960D26D41A4200C215D4 /* PhotoDetailView.xib in Resources */,
+				04D3E73E26D7930A000033DD /* NasaAPI.plist in Resources */,
+				0449336B26D6DC7600EDFA4B /* Localizable.strings in Resources */,
 				042213C126CF9A1B000488D9 /* LaunchScreen.storyboard in Resources */,
+				0430BA6E26D2E6660057B8A2 /* PopOverMenu.storyboard in Resources */,
 				042213BE26CF9A1B000488D9 /* Assets.xcassets in Resources */,
 				042213BC26CF9A1A000488D9 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +310,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85B7CF0D9FC3D30AD9E16A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasaExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA5E1DAF60A92CBF019F33B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaExample/Pods-NasaExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaExample/Pods-NasaExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasaExample/Pods-NasaExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		042213AD26CF9A1A000488D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042213B926CF9A1A000488D9 /* ViewController.swift in Sources */,
+				042213EF26CFCBB2000488D9 /* CustomCollectionViewCell.swift in Sources */,
+				04B3960E26D41A4200C215D4 /* PhotoDetailView.swift in Sources */,
+				0430BA6C26D24AD40057B8A2 /* PhotoCollectionViewModel.swift in Sources */,
+				0430BA7126D2E6CE0057B8A2 /* PopOverMenuViewController.swift in Sources */,
+				04B3B19C26D5AB97006E53E7 /* Localization.swift in Sources */,
+				042213F126CFCBE3000488D9 /* UIViewExtension.swift in Sources */,
+				042213B926CF9A1A000488D9 /* MainViewController.swift in Sources */,
+				04B3B19626D4E575006E53E7 /* PhotoDetailCellView.swift in Sources */,
+				042213E826CFBB97000488D9 /* NetworkingManager.swift in Sources */,
+				042F445526D3ACAF00CB56FE /* PopOverMenuTableViewCell.swift in Sources */,
 				042213B526CF9A1A000488D9 /* AppDelegate.swift in Sources */,
+				0430BA6A26D24AAA0057B8A2 /* PhotoCollectionViewController.swift in Sources */,
 				042213B726CF9A1A000488D9 /* SceneDelegate.swift in Sources */,
+				04D3E73B26D7858F000033DD /* Styles.swift in Sources */,
+				042213EC26CFBC56000488D9 /* Category.swift in Sources */,
+				042213E226CFA3E4000488D9 /* Enums.swift in Sources */,
+				0430BA7326D2E6D90057B8A2 /* PopOverMenuViewModel.swift in Sources */,
+				042213F626D1165B000488D9 /* Constants.swift in Sources */,
+				04B3B19A26D5AB6E006E53E7 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +519,7 @@
 		};
 		042213C626CF9A1B000488D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13BD76C73AE120A5468D84C0 /* Pods-NasaExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +538,7 @@
 		};
 		042213C726CF9A1B000488D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5901915AA080D7F99658A1B /* Pods-NasaExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jf9-4m-Yp7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Collection View Controller-->
+        <scene sceneID="AkH-al-uYu">
+            <objects>
+                <viewController storyboardIdentifier="PhotoCollection" id="VnS-NC-CH1" customClass="PhotoCollectionViewController" customModule="NasaExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oML-S4-VZi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwR-2W-Vot" customClass="PhotoDetailView" customModule="NasaExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="geL-37-azg" customClass="InfiniteCollectionView" customModule="InfiniteCollectionView">
+                                <rect key="frame" x="24" y="112" width="366" height="693"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.78039215689999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="15" id="qF1-Ia-f7Q">
+                                    <size key="itemSize" width="264" height="260"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Photo" id="DOM-a0-gfZ" customClass="CustomCollectionViewCell" customModule="NasaExample" customModuleProvider="target">
+                                        <rect key="frame" x="51" y="0.0" width="264" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3F3-Tl-lwT">
+                                            <rect key="frame" x="0.0" y="0.0" width="264" height="260"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JmL-Ox-zGT">
+                                                    <rect key="frame" x="8" y="8" width="248" height="244"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JmL-Ox-zGT" firstAttribute="top" secondItem="3F3-Tl-lwT" secondAttribute="top" constant="8" id="77x-fb-TVe"/>
+                                                <constraint firstAttribute="bottom" secondItem="JmL-Ox-zGT" secondAttribute="bottom" constant="8" id="UDn-9O-M5w"/>
+                                                <constraint firstAttribute="trailing" secondItem="JmL-Ox-zGT" secondAttribute="trailing" constant="8" id="cCq-jG-Vwm"/>
+                                                <constraint firstItem="JmL-Ox-zGT" firstAttribute="leading" secondItem="3F3-Tl-lwT" secondAttribute="leading" constant="8" id="xqP-SO-rXv"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="264" height="260"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="imageView" destination="JmL-Ox-zGT" id="PdK-6o-BFC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VnS-NC-CH1" id="3lo-Md-Hbc"/>
+                                    <outlet property="delegate" destination="VnS-NC-CH1" id="JQs-JE-jpn"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XWd-m8-zrQ"/>
+                        <color key="backgroundColor" red="0.91107612849999997" green="0.86364763980000003" blue="0.80064648390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wwR-2W-Vot" firstAttribute="trailing" secondItem="XWd-m8-zrQ" secondAttribute="trailing" id="1Qq-eC-f2b"/>
+                            <constraint firstItem="XWd-m8-zrQ" firstAttribute="trailing" secondItem="geL-37-azg" secondAttribute="trailing" constant="24" id="1xe-zI-4wv"/>
+                            <constraint firstItem="wwR-2W-Vot" firstAttribute="leading" secondItem="XWd-m8-zrQ" secondAttribute="leading" id="Fcb-bx-nU6"/>
+                            <constraint firstAttribute="bottom" secondItem="wwR-2W-Vot" secondAttribute="bottom" id="H9u-MF-DsI"/>
+                            <constraint firstItem="XWd-m8-zrQ" firstAttribute="bottom" secondItem="geL-37-azg" secondAttribute="bottom" constant="8" id="ITX-mc-2yf"/>
+                            <constraint firstItem="geL-37-azg" firstAttribute="top" secondItem="XWd-m8-zrQ" secondAttribute="top" constant="24" id="Ild-6j-U9b"/>
+                            <constraint firstItem="geL-37-azg" firstAttribute="leading" secondItem="XWd-m8-zrQ" secondAttribute="leading" constant="24" id="R13-0N-Bc3"/>
+                            <constraint firstItem="wwR-2W-Vot" firstAttribute="top" secondItem="oML-S4-VZi" secondAttribute="top" id="og3-ZZ-Fe2"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="693-G1-SuC">
+                        <barButtonItem key="rightBarButtonItem" image="camera.filters" catalog="system" id="hqw-bF-wxj">
+                            <connections>
+                                <action selector="cameraFilterButtonTapped:" destination="VnS-NC-CH1" id="1So-65-INa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraFilterButton" destination="hqw-bF-wxj" id="Ag7-4k-0YH"/>
+                        <outlet property="collectionView" destination="geL-37-azg" id="fG3-Be-tRi"/>
+                        <outlet property="detailView" destination="wwR-2W-Vot" id="ojS-kX-Sz3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tB-t5-XIR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4566.666666666667" y="-841.07142857142856"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="QLv-nl-Wlx">
+            <objects>
+                <tabBarController id="jf9-4m-Yp7" customClass="MainViewController" customModule="NasaExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c9k-6T-SvF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rIp-WZ-ZUQ" kind="relationship" relationship="viewControllers" id="dHZ-ND-6r5"/>
+                        <segue destination="Ym2-4t-re3" kind="relationship" relationship="viewControllers" id="Fwt-R6-Dc4"/>
+                        <segue destination="v6a-L3-lZt" kind="relationship" relationship="viewControllers" id="gQb-Sy-5WG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toG-zO-QwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="-729"/>
+        </scene>
+        <!--Curiosity-->
+        <scene sceneID="S3L-7C-cUg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rIp-WZ-ZUQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Curiosity" image="Curiosity" selectedImage="Curiosity" id="vJl-FD-8hg"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aNb-BE-Rov">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VnS-NC-CH1" kind="relationship" relationship="rootViewController" id="lQd-83-JNY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fo2-oy-yHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="-1169"/>
+        </scene>
+        <!--Opportunity-->
+        <scene sceneID="eyv-cD-6Cy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ym2-4t-re3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Opportunity" image="Spirit" selectedImage="Opportunity" id="uc6-HU-Aeu"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hQ3-zF-Q6O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VnS-NC-CH1" kind="relationship" relationship="rootViewController" id="Qf1-kW-SBt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMQ-UK-ySx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="448"/>
+        </scene>
+        <!--Spirit-->
+        <scene sceneID="Q0T-IY-zST">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v6a-L3-lZt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Spirit" image="Opportunity" selectedImage="Spirit" id="53Y-yS-p19"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="L6v-q4-t18"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GTn-0D-Zmz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VnS-NC-CH1" kind="relationship" relationship="rootViewController" id="BZG-CY-3FJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDj-Z2-q0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="-416"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lQd-83-JNY"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Curiosity" width="30" height="30"/>
+        <image name="Opportunity" width="30" height="30"/>
+        <image name="Spirit" width="30" height="30"/>
+        <image name="camera.filters" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

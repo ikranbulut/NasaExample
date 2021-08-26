@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  NasaExample
+
+  Created by Mac on 25.08.2021.
+  
+*/
+//MARK: - Photo Detail
+
+"photoDetail.cameraName" = "Camera Name: ";
+"photoDetail.roverName" = "Rover Name: ";
+"photoDetail.roverStatus" = "Rover Status ";
+"photoDetail.landingDate" = "Landing Date: ";
+"photoDetail.launchDate" = "Launch Date:  ";
+"photoDetail.earthDate" = "Earth Date: ";
